@@ -1,0 +1,13 @@
+discovery:
+  name: discovery
+  prefix: /systems/SYSTEMID
+labels:
+  policy-type: custom/rules
+  system-id: SYSTEMID
+  system-type: custom
+services:
+- credentials:
+    bearer:
+      token: TOKEN
+  name: styra
+  url: https://<das-id>.styra.com/v1
